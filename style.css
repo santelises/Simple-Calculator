@@ -1,0 +1,121 @@
+*{
+    margin: 0px; 
+    padding: 0px; 
+    font-size: 20px;
+    font-family: 'Comfortaa', cursive;
+
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    margin: 150px;
+}
+
+.calculator{
+    background-color: peru;
+    padding: 20px;
+    width: 300px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    border-radius: 5px;
+}
+
+.display{
+    height: 80px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+    border-radius: 2px;
+}
+
+.display p{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 40px;
+    padding: 0 30px;
+}
+.expression {
+    font-size: 20px;
+}
+
+.currentValue {
+    font-size: 24px;
+}
+.number-pad{
+    display: grid;
+    padding: 5px; 
+    border-radius: 5px;
+    grid-template-columns: repeat(4, 1fr);
+
+    grid-column-start: 1;
+    grid-column-end: 5;
+    grid-row-start: 2;
+    grid-row-end: 6;
+    row-gap: 1px;
+}
+
+.clear{
+    grid-column-start: 1;
+    grid-column-end: 2;
+    font-size: 16px;
+    font-style: italic;
+    background-color: p;
+    background-color: lightblue;
+}
+.delete{
+    grid-column-start: 2;
+    grid-column-end: 4;
+    font-size: 16px;
+    font-style: italic;
+    background-color: pink;
+}
+
+.toggle-sign{
+    grid-column-start: 4;
+    grid-column-end: 5;
+    font-size: 16px;
+    font-style: italic;
+    background-color: orchid;
+
+}
+
+button{ 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    background-color: white;
+    border-radius: 5px;
+}
+
+.operator{
+    background-color: papayawhip;
+}
+.evaluation{
+    background-color: greenyellow;
+}
+
+
+
+button:hover{
+    transform: translateY(-0.05rem);
+}
+
+/* .operator:active{
+    background-color: lightsalmon;
+} */
+
+
+@media only screen and (max-width: 560px) {
+    body {
+      margin: 150px 0 0 0;
+    }
+  }
+
+
+
+
+
+
